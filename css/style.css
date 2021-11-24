@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mohave:wght@400;700&family=Press+Start+2P&display=swap");
-
-
-
 :root {
   --main_color: #353535;
 }
-
 
 body {
   font-family: "Mohave", sans-serif;
@@ -55,7 +51,6 @@ strong {
 .wrapper .__hero {
   position: relative;
   background: rgba(0, 0, 0, 0.335);
-
   top: 0;
   height: 350px;
   width: 100%;
@@ -73,6 +68,33 @@ strong {
 
 .wrapper .__hero .intestazione h2 {
   margin-bottom: 0;
+}
+
+.cartBanner {
+  display: flex;
+  justify-content: flex-end;
+  background-image: linear-gradient(135deg, #f6416c 10%, #fff6b7 100%);
+}
+
+.cartBanner .cartProductsNum {
+  margin-right: 20px;
+}
+
+.cartBanner .clearCart {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+.cartBanner .clearCart:hover {
+  transform: scale(1.6);
+}
+
+.cartBanner .cartProductsNum::before {
+  content: "🛒";
+  margin-right: 10px;
+  font-size: 1.5rem;
 }
 
 .wrapper__titles {
